@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+   }
+   element AD7490_0
+   {
+      datum _sortIndex
+      {
+         value = "30";
+         type = "int";
+      }
+   }
+   element ARM9_soft_core_0
+   {
+      datum _sortIndex
+      {
+         value = "29";
+         type = "int";
+      }
+   }
+   element HPS_tabby
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element brush_motor_driver_1.MCLK
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_3.MCLK
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_0.PWMCLK
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_3.PWMRST
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element basic_SysID.SysID
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435456";
+         type = "long";
+      }
+   }
+   element basic_FuncLED_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element basic_FuncLED_1
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element basic_FuncLED_2
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element basic_FuncLED_3
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element basic_ShieldCtrl
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element basic_SysID
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element brush_motor_driver_0
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+   }
+   element brush_motor_driver_1
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+   }
+   element brush_motor_driver_2
+   {
+      datum _sortIndex
+      {
+         value = "22";
+         type = "int";
+      }
+   }
+   element brush_motor_driver_3
+   {
+      datum _sortIndex
+      {
+         value = "23";
+         type = "int";
+      }
+   }
+   element step_motor_driver_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436128";
+         type = "long";
+      }
+   }
+   element step_motor_driver_4.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436192";
+         type = "long";
+      }
+   }
+   element fan_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+      datum baseAddress
+      {
+         value = "268436480";
+         type = "String";
+      }
+   }
+   element basic_FuncLED_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435712";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436384";
+         type = "long";
+      }
+   }
+   element basic_FuncLED_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435716";
+         type = "long";
+      }
+   }
+   element fan_motor_driver_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436512";
+         type = "String";
+      }
+   }
+   element position_encoder_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436224";
+         type = "long";
+      }
+   }
+   element step_motor_driver_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436160";
+         type = "long";
+      }
+   }
+   element basic_ShieldCtrl.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+      datum baseAddress
+      {
+         value = "268435968";
+         type = "long";
+      }
+   }
+   element basic_FuncLED_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435720";
+         type = "long";
+      }
+   }
+   element step_motor_driver_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436096";
+         type = "long";
+      }
+   }
+   element step_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436064";
+         type = "long";
+      }
+   }
+   element position_encoder_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436256";
+         type = "long";
+      }
+   }
+   element AD7490_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "805306368";
+         type = "String";
+      }
+   }
+   element basic_FuncLED_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435724";
+         type = "long";
+      }
+   }
+   element brush_motor_driver_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436448";
+         type = "long";
+      }
+   }
+   element position_encoder_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436320";
+         type = "long";
+      }
+   }
+   element position_encoder_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436288";
+         type = "long";
+      }
+   }
+   element brush_motor_driver_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436416";
+         type = "long";
+      }
+   }
+   element subdivision_step_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436544";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436352";
+         type = "long";
+      }
+   }
+   element fan_motor_driver_0
+   {
+      datum _sortIndex
+      {
+         value = "24";
+         type = "int";
+      }
+   }
+   element fan_motor_driver_1
+   {
+      datum _sortIndex
+      {
+         value = "25";
+         type = "int";
+      }
+   }
+   element grid_PIO26_A.gpio
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "536870912";
+         type = "long";
+      }
+   }
+   element grid_PIO26_B.gpio
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "536871040";
+         type = "long";
+      }
+   }
+   element grid_PIO26_A
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element grid_PIO26_B
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element grid_PWM_0
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element grid_PWM_1
+   {
+      datum _sortIndex
+      {
+         value = "27";
+         type = "int";
+      }
+   }
+   element grid_PWM_2
+   {
+      datum _sortIndex
+      {
+         value = "28";
+         type = "int";
+      }
+   }
+   element position_encoder_2.position_encoder
+   {
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+   }
+   element position_encoder_0
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element position_encoder_1
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element position_encoder_2
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+   }
+   element position_encoder_3
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+   }
+   element grid_PWM_0.pwm
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "536871168";
+         type = "long";
+      }
+   }
+   element grid_PWM_2.pwm
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "553648128";
+         type = "String";
+      }
+   }
+   element grid_PWM_1.pwm
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "570425344";
+         type = "String";
+      }
+   }
+   element step_motor_driver_0
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element step_motor_driver_1
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element step_motor_driver_2
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element step_motor_driver_3
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element step_motor_driver_4
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element subdivision_step_motor_driver_0
+   {
+      datum _sortIndex
+      {
+         value = "26";
+         type = "int";
+      }
+   }
+   element test_LEDState
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EP4CE15F23C8" />
+ <parameter name="deviceFamily" value="Cyclone IV E" />
+ <parameter name="deviceSpeedGrade" value="8" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="grid.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="1" />
+ <parameter name="timeStamp" value="1420377856689" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="m0" internal="HPS_tabby.EXPORT" type="conduit" dir="end" />
+ <interface
+   name="led_f0"
+   internal="basic_FuncLED_0.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="led_f1"
+   internal="basic_FuncLED_1.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="led_f2"
+   internal="basic_FuncLED_2.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="led_f3"
+   internal="basic_FuncLED_3.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="shield_ctrl"
+   internal="basic_ShieldCtrl.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface name="slot_a" internal="grid_PIO26_A.EXPORT" type="conduit" dir="end" />
+ <interface name="slot_b" internal="grid_PIO26_B.EXPORT" type="conduit" dir="end" />
+ <interface name="pwm_c0" internal="grid_PWM_0.EXPORT" type="conduit" dir="end" />
+ <interface
+   name="step_motor_driver_0"
+   internal="step_motor_driver_0.step_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="position_encoder_0"
+   internal="position_encoder_0.position_encoder" />
+ <interface
+   name="step_motor_driver_1"
+   internal="step_motor_driver_1.step_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="brush_motor_driver_3"
+   internal="brush_motor_driver_3.brush_motor" />
+ <interface
+   name="brush_motor_driver_2"
+   internal="brush_motor_driver_2.brush_motor" />
+ <interface
+   name="brush_motor_driver_1"
+   internal="brush_motor_driver_1.brush_motor" />
+ <interface
+   name="step_motor_driver_2"
+   internal="step_motor_driver_2.step_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="step_motor_driver_3"
+   internal="step_motor_driver_3.step_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="step_motor_driver_4"
+   internal="step_motor_driver_4.step_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="position_encoder_1"
+   internal="position_encoder_1.position_encoder" />
+ <interface
+   name="position_encoder_2"
+   internal="position_encoder_2.position_encoder" />
+ <interface
+   name="position_encoder_3"
+   internal="position_encoder_3.position_encoder" />
+ <interface
+   name="brush_motor_driver_0"
+   internal="brush_motor_driver_0.brush_motor" />
+ <interface name="fan_motor_driver_0" internal="fan_motor_driver_0.fan_motor" />
+ <interface name="fan_motor_driver_1" internal="fan_motor_driver_1.fan_motor" />
+ <interface
+   name="subdivision_step_motor_driver_0"
+   internal="subdivision_step_motor_driver_0.step_motor" />
+ <interface name="m1" internal="ARM9_soft_core_0.ctrl" type="conduit" dir="end" />
+ <interface name="ad7490_0" internal="AD7490_0.ADC" type="conduit" dir="end" />
+ <module kind="hps_tabby" version="1.1" enabled="1" name="HPS_tabby" />
+ <module kind="basic_SysID" version="1.0" enabled="1" name="basic_SysID">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="basic_FuncLED" version="1.0" enabled="1" name="basic_FuncLED_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="basic_FuncLED" version="1.0" enabled="1" name="basic_FuncLED_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="basic_FuncLED" version="1.0" enabled="1" name="basic_FuncLED_2">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="basic_FuncLED" version="1.0" enabled="1" name="basic_FuncLED_3">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="basic_ShieldCtrl"
+   version="1.0"
+   enabled="1"
+   name="basic_ShieldCtrl">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="test_LEDState" version="1.0" enabled="1" name="test_LEDState">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="grid_PIO26" version="1.0" enabled="1" name="grid_PIO26_A">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="grid_PIO26" version="1.0" enabled="1" name="grid_PIO26_B">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="grid_PWM" version="1.0" enabled="1" name="grid_PWM_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="step_motor_driver"
+   version="1.0"
+   enabled="1"
+   name="step_motor_driver_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="brush_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="brush_motor_driver_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="fan_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="fan_motor_driver_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="step_motor_driver"
+   version="1.0"
+   enabled="1"
+   name="step_motor_driver_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="brush_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="brush_motor_driver_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="brush_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="brush_motor_driver_2">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="brush_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="brush_motor_driver_3">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="step_motor_driver"
+   version="1.0"
+   enabled="1"
+   name="step_motor_driver_2">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="step_motor_driver"
+   version="1.0"
+   enabled="1"
+   name="step_motor_driver_3">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="step_motor_driver"
+   version="1.0"
+   enabled="1"
+   name="step_motor_driver_4">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_2">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_3">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="fan_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="fan_motor_driver_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module
+   kind="subdivision_step_motor_driver"
+   version="1.0"
+   enabled="0"
+   name="subdivision_step_motor_driver_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="grid_PWM" version="1.0" enabled="1" name="grid_PWM_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="grid_PWM" version="1.0" enabled="1" name="grid_PWM_2">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module
+   kind="ARM9_soft_core"
+   version="1.0"
+   enabled="1"
+   name="ARM9_soft_core_0" />
+ <module kind="AD7490" version="1.0" enabled="1" name="AD7490_0" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_SysID.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_SysID.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_SysID.SysID">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000000" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_FuncLED_0.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_FuncLED_0.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_FuncLED_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000100" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_FuncLED_1.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_FuncLED_1.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_FuncLED_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000104" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_FuncLED_2.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_FuncLED_2.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_FuncLED_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000108" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_FuncLED_3.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_FuncLED_3.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_FuncLED_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1000010c" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="basic_ShieldCtrl.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="basic_ShieldCtrl.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="basic_ShieldCtrl.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000200" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="12.1"
+   start="HPS_tabby.EVENTS"
+   end="basic_ShieldCtrl.OC">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="test_LEDState.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="test_LEDState.MCLK" />
+ <connection
+   kind="avalon_streaming"
+   version="12.1"
+   start="test_LEDState.fled1"
+   end="basic_FuncLED_1.ledf" />
+ <connection
+   kind="avalon_streaming"
+   version="12.1"
+   start="test_LEDState.fled2"
+   end="basic_FuncLED_2.ledf" />
+ <connection
+   kind="avalon_streaming"
+   version="12.1"
+   start="test_LEDState.fled3"
+   end="basic_FuncLED_3.ledf" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PIO26_A.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PIO26_A.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="grid_PIO26_A.gpio">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x20000000" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PIO26_B.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PIO26_B.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="grid_PIO26_B.gpio">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x20000080" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="12.1"
+   start="HPS_tabby.EVENTS"
+   end="grid_PIO26_A.gpint">
+  <parameter name="irqNumber" value="1" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="12.1"
+   start="HPS_tabby.EVENTS"
+   end="grid_PIO26_B.gpint">
+  <parameter name="irqNumber" value="2" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_0.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PWM_0.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="grid_PWM_0.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_0.PWMRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="grid_PWM_0.pwm">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x20000100" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_0.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="step_motor_driver_0.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="step_motor_driver_0.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_0.PWMRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="step_motor_driver_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000260" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_0.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_0.MRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000300" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="brush_motor_driver_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000380" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="brush_motor_driver_0.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_0.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_0.PWMRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_0.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_0.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_0.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_0.PWMCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000400" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_1.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="step_motor_driver_1.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="step_motor_driver_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000280" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_1.PWMRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_1.MRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="brush_motor_driver_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100003a0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="step_motor_driver_1.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_1.PWMRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_2.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_2.PWMRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_3.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="brush_motor_driver_3.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="brush_motor_driver_1.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="brush_motor_driver_2.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="brush_motor_driver_2.PWMCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="brush_motor_driver_3.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="brush_motor_driver_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100003e0" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="brush_motor_driver_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100003c0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="brush_motor_driver_3.PWMCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="brush_motor_driver_1.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_2.MRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="step_motor_driver_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100002a0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_2.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="step_motor_driver_2.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="step_motor_driver_2.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_3.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="step_motor_driver_3.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="step_motor_driver_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100002c0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_3.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="step_motor_driver_3.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_4.MRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="step_motor_driver_4.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100002e0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="step_motor_driver_4.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="step_motor_driver_4.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="step_motor_driver_4.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_1.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_1.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000320" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_2.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_2.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000340" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_3.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_3.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000360" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="brush_motor_driver_0.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_1.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_1.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000420" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_1.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_1.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="subdivision_step_motor_driver_0.mrst" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="subdivision_step_motor_driver_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000440" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="subdivision_step_motor_driver_0.mclk" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="subdivision_step_motor_driver_0.pwmclk" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="subdivision_step_motor_driver_0.pwmrst" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_2.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_2.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PWM_2.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_1.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="grid_PWM_1.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PWM_1.PWMCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PWM_1.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="grid_PWM_2.PWMCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="ARM9_soft_core_0.m1"
+   end="grid_PWM_2.pwm">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x21000000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="ARM9_soft_core_0.m1"
+   end="grid_PWM_1.pwm">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x22000000" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AD7490_0.mrst" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AD7490_0.mclk" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="AD7490_0.adcclk" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AD7490_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x30000000" />
+ </connection>
+</system>
