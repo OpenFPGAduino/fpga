@@ -9,6 +9,9 @@
 *.vo
 *.sdo
 *.rpt
+*.chg
+*.log
+*.qip
 *.summary
 *.smsg
 .sopc_builder/
