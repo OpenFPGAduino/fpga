@@ -137,7 +137,24 @@ wire	rPM0 = 1;
 wire	rSHADOW = 0;
 wire	rWEAKTRI = 0;
 
+reg [7:0] clk_counter;
+reg adc_clk_20m; //csi_ADCCLK_clk is 200M
 always@(posedge csi_ADCCLK_clk or posedge adc_reset)
+begin 
+	if(adc_reset) begin
+		adc_clk_20m <= 1'b0;
+		clk_counter <= 8'b0;
+	end
+	else begin
+		clk_counter <= clk_counter + 1'b1;
+		if(clk_counter == 8'd5) begin
+			adc_clk_20m <= ~adc_clk_20m;
+			clk_counter <= 8'b0;
+		end
+	end
+end
+
+always@(posedge adc_clk_20m or posedge adc_reset)
 begin
 	if(adc_reset) begin
 		adc_ch[0] <= 0;

@@ -4,7 +4,7 @@ mkdir $tmppath
 for shname in `cd package; ls *.v`
 do 
 	name=`echo "$shname" | awk -F. '{print $1}'`      
-	cp package/$shname matrix.v     
+	cp package/$shname grid.v     
 	echo "synthsis for file $shname"
 	make synthsis
 	cp output/grid.rbf $tmppath/$name.rbf

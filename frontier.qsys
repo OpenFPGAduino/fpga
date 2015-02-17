@@ -16,7 +16,87 @@
    {
       datum _sortIndex
       {
+         value = "16";
+         type = "int";
+      }
+   }
+   element AD7490_1
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+   }
+   element AM2301_0
+   {
+      datum _sortIndex
+      {
+         value = "23";
+         type = "int";
+      }
+   }
+   element AM2301_1
+   {
+      datum _sortIndex
+      {
+         value = "24";
+         type = "int";
+      }
+   }
+   element AM2301_2
+   {
+      datum _sortIndex
+      {
+         value = "25";
+         type = "int";
+      }
+   }
+   element AM2301_3
+   {
+      datum _sortIndex
+      {
+         value = "26";
+         type = "int";
+      }
+   }
+   element AM2301_4
+   {
+      datum _sortIndex
+      {
+         value = "27";
+         type = "int";
+      }
+   }
+   element AM2301_5
+   {
+      datum _sortIndex
+      {
+         value = "28";
+         type = "int";
+      }
+   }
+   element AM2301_6
+   {
+      datum _sortIndex
+      {
+         value = "29";
+         type = "int";
+      }
+   }
+   element AM2301_7
+   {
+      datum _sortIndex
+      {
          value = "30";
+         type = "int";
+      }
+   }
+   element AM2301_8
+   {
+      datum _sortIndex
+      {
+         value = "31";
          type = "int";
       }
    }
@@ -24,7 +104,7 @@
    {
       datum _sortIndex
       {
-         value = "29";
+         value = "32";
          type = "int";
       }
    }
@@ -36,7 +116,7 @@
          type = "int";
       }
    }
-   element brush_motor_driver_1.MCLK
+   element brush_motor_driver_3.MCLK
    {
       datum _tags
       {
@@ -44,7 +124,7 @@
          type = "String";
       }
    }
-   element brush_motor_driver_3.MCLK
+   element brush_motor_driver_1.MCLK
    {
       datum _tags
       {
@@ -158,7 +238,7 @@
    {
       datum _sortIndex
       {
-         value = "20";
+         value = "18";
          type = "int";
       }
    }
@@ -166,7 +246,7 @@
    {
       datum _sortIndex
       {
-         value = "21";
+         value = "19";
          type = "int";
       }
    }
@@ -174,7 +254,7 @@
    {
       datum _sortIndex
       {
-         value = "22";
+         value = "20";
          type = "int";
       }
    }
@@ -182,34 +262,8 @@
    {
       datum _sortIndex
       {
-         value = "23";
+         value = "21";
          type = "int";
-      }
-   }
-   element step_motor_driver_2.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436128";
-         type = "long";
-      }
-   }
-   element step_motor_driver_4.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436192";
-         type = "long";
       }
    }
    element fan_motor_driver_0.ctrl
@@ -230,6 +284,32 @@
          type = "String";
       }
    }
+   element basic_FuncLED_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268435724";
+         type = "long";
+      }
+   }
+   element brush_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436352";
+         type = "long";
+      }
+   }
    element basic_FuncLED_0.ctrl
    {
       datum _lockedAddress
@@ -243,7 +323,7 @@
          type = "String";
       }
    }
-   element brush_motor_driver_1.ctrl
+   element step_motor_driver_1.ctrl
    {
       datum _lockedAddress
       {
@@ -252,46 +332,7 @@
       }
       datum baseAddress
       {
-         value = "268436384";
-         type = "long";
-      }
-   }
-   element basic_FuncLED_1.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268435716";
-         type = "long";
-      }
-   }
-   element fan_motor_driver_1.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436512";
-         type = "String";
-      }
-   }
-   element position_encoder_0.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436224";
+         value = "268436096";
          type = "long";
       }
    }
@@ -308,25 +349,20 @@
          type = "long";
       }
    }
-   element basic_ShieldCtrl.ctrl
+   element position_encoder_2.ctrl
    {
       datum _lockedAddress
       {
          value = "1";
          type = "boolean";
       }
-      datum _tags
-      {
-         value = "";
-         type = "String";
-      }
       datum baseAddress
       {
-         value = "268435968";
+         value = "268436288";
          type = "long";
       }
    }
-   element basic_FuncLED_2.ctrl
+   element basic_FuncLED_1.ctrl
    {
       datum _lockedAddress
       {
@@ -335,33 +371,7 @@
       }
       datum baseAddress
       {
-         value = "268435720";
-         type = "long";
-      }
-   }
-   element step_motor_driver_1.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436096";
-         type = "long";
-      }
-   }
-   element step_motor_driver_0.ctrl
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "268436064";
+         value = "268435716";
          type = "long";
       }
    }
@@ -378,7 +388,7 @@
          type = "long";
       }
    }
-   element AD7490_0.ctrl
+   element AD7490_1.ctrl
    {
       datum _lockedAddress
       {
@@ -387,11 +397,37 @@
       }
       datum baseAddress
       {
-         value = "805306368";
+         value = "268436544";
          type = "String";
       }
    }
-   element basic_FuncLED_3.ctrl
+   element basic_ShieldCtrl.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum _tags
+      {
+         value = "";
+         type = "String";
+      }
+      datum baseAddress
+      {
+         value = "268435728";
+         type = "String";
+      }
+   }
+   element AM2301_6.ctrl
+   {
+      datum baseAddress
+      {
+         value = "268436704";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_2.ctrl
    {
       datum _lockedAddress
       {
@@ -400,11 +436,53 @@
       }
       datum baseAddress
       {
-         value = "268435724";
+         value = "268436416";
          type = "long";
       }
    }
-   element brush_motor_driver_3.ctrl
+   element AM2301_7.ctrl
+   {
+      datum baseAddress
+      {
+         value = "268436736";
+         type = "String";
+      }
+   }
+   element AM2301_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436608";
+         type = "String";
+      }
+   }
+   element AM2301_4.ctrl
+   {
+      datum baseAddress
+      {
+         value = "268436640";
+         type = "String";
+      }
+   }
+   element AM2301_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436544";
+         type = "String";
+      }
+   }
+   element step_motor_driver_4.ctrl
    {
       datum _lockedAddress
       {
@@ -413,8 +491,21 @@
       }
       datum baseAddress
       {
-         value = "268436448";
+         value = "268436192";
          type = "long";
+      }
+   }
+   element AM2301_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436576";
+         type = "String";
       }
    }
    element position_encoder_3.ctrl
@@ -430,7 +521,7 @@
          type = "long";
       }
    }
-   element position_encoder_2.ctrl
+   element basic_FuncLED_2.ctrl
    {
       datum _lockedAddress
       {
@@ -439,11 +530,19 @@
       }
       datum baseAddress
       {
-         value = "268436288";
+         value = "268435720";
          type = "long";
       }
    }
-   element brush_motor_driver_2.ctrl
+   element AM2301_5.ctrl
+   {
+      datum baseAddress
+      {
+         value = "268436672";
+         type = "String";
+      }
+   }
+   element brush_motor_driver_1.ctrl
    {
       datum _lockedAddress
       {
@@ -452,7 +551,20 @@
       }
       datum baseAddress
       {
-         value = "268436416";
+         value = "268436384";
+         type = "long";
+      }
+   }
+   element position_encoder_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436224";
          type = "long";
       }
    }
@@ -469,7 +581,7 @@
          type = "String";
       }
    }
-   element brush_motor_driver_0.ctrl
+   element AM2301_0.ctrl
    {
       datum _lockedAddress
       {
@@ -478,15 +590,80 @@
       }
       datum baseAddress
       {
-         value = "268436352";
+         value = "268436512";
+         type = "String";
+      }
+   }
+   element step_motor_driver_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436128";
          type = "long";
+      }
+   }
+   element brush_motor_driver_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436448";
+         type = "long";
+      }
+   }
+   element AD7490_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436480";
+         type = "String";
+      }
+   }
+   element step_motor_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436064";
+         type = "long";
+      }
+   }
+   element fan_motor_driver_1.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268436512";
+         type = "String";
       }
    }
    element fan_motor_driver_0
    {
       datum _sortIndex
       {
-         value = "24";
+         value = "22";
          type = "int";
       }
    }
@@ -494,7 +671,7 @@
    {
       datum _sortIndex
       {
-         value = "25";
+         value = "36";
          type = "int";
       }
    }
@@ -502,13 +679,13 @@
    {
       datum _lockedAddress
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
       datum baseAddress
       {
          value = "536870912";
-         type = "long";
+         type = "String";
       }
    }
    element grid_PIO26_B.gpio
@@ -552,7 +729,7 @@
    {
       datum _sortIndex
       {
-         value = "27";
+         value = "34";
          type = "int";
       }
    }
@@ -560,7 +737,7 @@
    {
       datum _sortIndex
       {
-         value = "28";
+         value = "33";
          type = "int";
       }
    }
@@ -576,7 +753,7 @@
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "40";
          type = "int";
       }
    }
@@ -584,7 +761,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "39";
          type = "int";
       }
    }
@@ -592,7 +769,7 @@
    {
       datum _sortIndex
       {
-         value = "18";
+         value = "38";
          type = "int";
       }
    }
@@ -600,21 +777,8 @@
    {
       datum _sortIndex
       {
-         value = "19";
+         value = "37";
          type = "int";
-      }
-   }
-   element grid_PWM_0.pwm
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "536871168";
-         type = "long";
       }
    }
    element grid_PWM_2.pwm
@@ -641,6 +805,19 @@
       {
          value = "570425344";
          type = "String";
+      }
+   }
+   element grid_PWM_0.pwm
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "536871168";
+         type = "long";
       }
    }
    element step_motor_driver_0
@@ -687,7 +864,7 @@
    {
       datum _sortIndex
       {
-         value = "26";
+         value = "35";
          type = "int";
       }
    }
@@ -719,7 +896,7 @@
  <parameter name="projectName" value="grid.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1420377856689" />
+ <parameter name="timeStamp" value="1422091853635" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="m0" internal="HPS_tabby.EXPORT" type="conduit" dir="end" />
@@ -766,13 +943,19 @@
    dir="end" />
  <interface
    name="brush_motor_driver_3"
-   internal="brush_motor_driver_3.brush_motor" />
+   internal="brush_motor_driver_3.brush_motor"
+   type="conduit"
+   dir="end" />
  <interface
    name="brush_motor_driver_2"
-   internal="brush_motor_driver_2.brush_motor" />
+   internal="brush_motor_driver_2.brush_motor"
+   type="conduit"
+   dir="end" />
  <interface
    name="brush_motor_driver_1"
-   internal="brush_motor_driver_1.brush_motor" />
+   internal="brush_motor_driver_1.brush_motor"
+   type="conduit"
+   dir="end" />
  <interface
    name="step_motor_driver_2"
    internal="step_motor_driver_2.step_motor"
@@ -799,7 +982,9 @@
    internal="position_encoder_3.position_encoder" />
  <interface
    name="brush_motor_driver_0"
-   internal="brush_motor_driver_0.brush_motor" />
+   internal="brush_motor_driver_0.brush_motor"
+   type="conduit"
+   dir="end" />
  <interface name="fan_motor_driver_0" internal="fan_motor_driver_0.fan_motor" />
  <interface name="fan_motor_driver_1" internal="fan_motor_driver_1.fan_motor" />
  <interface
@@ -807,6 +992,7 @@
    internal="subdivision_step_motor_driver_0.step_motor" />
  <interface name="m1" internal="ARM9_soft_core_0.ctrl" type="conduit" dir="end" />
  <interface name="ad7490_0" internal="AD7490_0.ADC" type="conduit" dir="end" />
+ <interface name="ad7490_1" internal="AD7490_1.ADC" type="conduit" dir="end" />
  <module kind="hps_tabby" version="1.1" enabled="1" name="HPS_tabby" />
  <module kind="basic_SysID" version="1.0" enabled="1" name="basic_SysID">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
@@ -854,7 +1040,7 @@
  <module
    kind="brush_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="brush_motor_driver_0">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
@@ -885,7 +1071,7 @@
  <module
    kind="brush_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="brush_motor_driver_1">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
@@ -893,7 +1079,7 @@
  <module
    kind="brush_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="brush_motor_driver_2">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
@@ -901,7 +1087,7 @@
  <module
    kind="brush_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="brush_motor_driver_3">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
@@ -980,7 +1166,698 @@
    version="1.0"
    enabled="1"
    name="ARM9_soft_core_0" />
- <module kind="AD7490" version="1.0" enabled="1" name="AD7490_0" />
+ <module kind="AD7490" version="1.0" enabled="1" name="AD7490_0">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_ADCCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module kind="AD7490" version="1.0" enabled="1" name="AD7490_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_ADCCLK_CLOCK_RATE" value="200000000" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="0" name="AM2301_0">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="0" name="AM2301_1">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="0" name="AM2301_2">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_3">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_4">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_5">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_6">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_7">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
+ <module kind="AM2301" version="1.0" enabled="1" name="AM2301_8">
+  <parameter name="high_width" value="20" />
+  <parameter name="start_width" value="1000" />
+  <parameter name="start" value="0" />
+  <parameter name="start_read" value="1" />
+  <parameter name="start_end" value="2" />
+  <parameter name="start_low" value="3" />
+  <parameter name="start_high" value="4" />
+  <parameter name="bit_1_low" value="5" />
+  <parameter name="bit_1_high" value="6" />
+  <parameter name="bit_2_low" value="7" />
+  <parameter name="bit_2_high" value="8" />
+  <parameter name="bit_3_low" value="9" />
+  <parameter name="bit_3_high" value="10" />
+  <parameter name="bit_4_low" value="11" />
+  <parameter name="bit_4_high" value="12" />
+  <parameter name="bit_5_low" value="13" />
+  <parameter name="bit_5_high" value="14" />
+  <parameter name="bit_6_low" value="15" />
+  <parameter name="bit_6_high" value="16" />
+  <parameter name="bit_7_low" value="17" />
+  <parameter name="bit_7_high" value="18" />
+  <parameter name="bit_8_low" value="19" />
+  <parameter name="bit_8_high" value="20" />
+  <parameter name="bit_9_low" value="21" />
+  <parameter name="bit_9_high" value="22" />
+  <parameter name="bit_10_low" value="23" />
+  <parameter name="bit_10_high" value="24" />
+  <parameter name="bit_11_low" value="25" />
+  <parameter name="bit_11_high" value="26" />
+  <parameter name="bit_12_low" value="27" />
+  <parameter name="bit_12_high" value="28" />
+  <parameter name="bit_13_low" value="29" />
+  <parameter name="bit_13_high" value="30" />
+  <parameter name="bit_14_low" value="31" />
+  <parameter name="bit_14_high" value="32" />
+  <parameter name="bit_15_low" value="33" />
+  <parameter name="bit_15_high" value="34" />
+  <parameter name="bit_16_low" value="35" />
+  <parameter name="bit_16_high" value="36" />
+  <parameter name="bit_17_low" value="37" />
+  <parameter name="bit_17_high" value="38" />
+  <parameter name="bit_18_low" value="39" />
+  <parameter name="bit_18_high" value="40" />
+  <parameter name="bit_19_low" value="41" />
+  <parameter name="bit_19_high" value="42" />
+  <parameter name="bit_20_low" value="43" />
+  <parameter name="bit_20_high" value="44" />
+  <parameter name="bit_21_low" value="45" />
+  <parameter name="bit_21_high" value="46" />
+  <parameter name="bit_22_low" value="47" />
+  <parameter name="bit_22_high" value="48" />
+  <parameter name="bit_23_low" value="49" />
+  <parameter name="bit_23_high" value="50" />
+  <parameter name="bit_24_low" value="51" />
+  <parameter name="bit_24_high" value="52" />
+  <parameter name="bit_25_low" value="53" />
+  <parameter name="bit_25_high" value="54" />
+  <parameter name="bit_26_low" value="55" />
+  <parameter name="bit_26_high" value="56" />
+  <parameter name="bit_27_low" value="57" />
+  <parameter name="bit_27_high" value="58" />
+  <parameter name="bit_28_low" value="59" />
+  <parameter name="bit_28_high" value="60" />
+  <parameter name="bit_29_low" value="61" />
+  <parameter name="bit_29_high" value="62" />
+  <parameter name="bit_30_low" value="63" />
+  <parameter name="bit_30_high" value="64" />
+  <parameter name="bit_31_low" value="65" />
+  <parameter name="bit_31_high" value="66" />
+  <parameter name="bit_32_low" value="67" />
+  <parameter name="bit_32_high" value="68" />
+  <parameter name="ready" value="90" />
+  <parameter name="time_2s" value="2000000" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+ </module>
  <connection
    kind="reset"
    version="12.1"
@@ -1087,7 +1964,7 @@
    start="HPS_tabby.M1"
    end="basic_ShieldCtrl.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000200" />
+  <parameter name="baseAddress" value="0x10000110" />
  </connection>
  <connection
    kind="interrupt"
@@ -1680,6 +2557,167 @@
    end="AD7490_0.adcclk" />
  <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AD7490_0.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x30000000" />
+  <parameter name="baseAddress" value="0x10000400" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="grid_PWM_1.pwm">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x22000000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="grid_PWM_2.pwm">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x21000000" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AD7490_1.mrst" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AD7490_1.mclk" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AD7490_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000440" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="AD7490_1.adcclk" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_0.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_0.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_1.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_1.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000420" />
+ </connection>
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000440" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_2.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_2.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000460" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_3.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_3.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000480" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_4.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_4.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_4.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100004a0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_5.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_5.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_5.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100004c0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_6.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_6.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_6.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100004e0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_7.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_7.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_7.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000500" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="AM2301_8.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="AM2301_8.MCLK" />
+ <connection kind="avalon" version="12.1" start="HPS_tabby.M1" end="AM2301_8.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
  </connection>
 </system>
