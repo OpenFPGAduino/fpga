@@ -1,7 +1,7 @@
 #!/bin/sh
 tmppath="tmp$$"
 mkdir $tmppath
-for shname in `cd package; ls *.v`
+for shname in `cd package; ls *.v | sed 's/template.v//g'`
 do 
 	name=`echo "$shname" | awk -F. '{print $1}'`      
 	cp package/$shname grid.v     
