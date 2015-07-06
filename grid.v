@@ -450,15 +450,18 @@ frontier	b2v_inst(
     .step_motor_driver_4_BE  (),  //                     .BE
     .brush_motor_driver_0_HX (),  // brush_motor_driver_0.HX
     .brush_motor_driver_0_HY (),  //                     .HY
-    .ad7490_0_DOUT           (),  //             ad7490_0.DOUT
-    .ad7490_0_SCLK           (),  //                     .SCLK
-    .ad7490_0_CSN            (),  //                     .CSN
-    .ad7490_0_DIN            (),  //                     .DIN
-    .ad7490_1_DOUT           (),  //             ad7490_1.DOUT
-    .ad7490_1_SCLK           (),  //                     .SCLK
-    .ad7490_1_CSN            (),  //                     .CSN
-    .ad7490_1_DIN            (),  //                     .DIN
-
+    .ad7490_0_DOUT           (IO_A22),  //             ad7490_0.DOUT
+    .ad7490_0_SCLK           (IO_A23),  //                     .SCLK
+    .ad7490_0_CSN            (IO_A25),  //                     .CSN
+    .ad7490_0_DIN            (IO_A24),  //                     .DIN
+    .ad7490_1_DOUT           (IO_B22),  //             ad7490_1.DOUT
+    .ad7490_1_SCLK           (IO_B23),  //                     .SCLK
+    .ad7490_1_CSN            (IO_B25),  //                     .CSN
+    .ad7490_1_DIN            (IO_B24),  //                     .DIN
+    .am2301_0_sda            (IO_B2),  //             am2301_0.sda
+    .am2301_0_clk_1us        (),  //                     .clk_1us
+    .am2301_1_sda            (IO_B15),  //             am2301_1.sda
+    .am2301_1_clk_1us        (),   //                     .clk_1us
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
