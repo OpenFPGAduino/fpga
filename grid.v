@@ -73,8 +73,7 @@ module grid(
 	LED_F3G,
 	LED_F3B,
 	M1_WAITN,
-	IO_A_SCL,
-	IO_B_SCL,
+
 	SPDIF_OUT,
 	AUDIO_SDO,
 	AUDIO_SFS,
@@ -91,61 +90,64 @@ module grid(
 	IO_A_LOE,
 	IO_B_HOE,
 	IO_B_LOE,
-	IO_A_SDA,
-	IO_B_SDA,
 	//<io_part>
-	IO_B0,
-	IO_B1,
-	IO_B2,
-	IO_B3,
-	IO_B4,
-	IO_B5,
-	IO_B6,
-	IO_B7,
-	IO_B14,
-	IO_B15,
-	IO_B16,
-	IO_B17,
-	IO_B18,
-	IO_B19,
-	IO_B20,
-	IO_B21,
-	IO_B22,
-	IO_B23,
-	IO_B24,
-	IO_A0,
-	IO_A1,
-	IO_A2,
-	IO_A3,
-	IO_A4,
-	IO_A5,
-	IO_A6,
-	IO_A7,
-	IO_A8,
-	IO_A9,
-	IO_A10,
-	IO_A11,
-	IO_A12,
-	IO_A13,
-	IO_A14,
-	IO_A15,
-	IO_A16,
-	IO_A17,
-	IO_A18,
-	IO_A19,
-	IO_A20,
-	IO_A21,
-	IO_A22,
-	IO_A23,
-	IO_A24,
-	IO_A25,
-	IO_B25,
-	IO_B13,
-	IO_B9,
-	IO_B12,
-	IO_B8,
-	IO_B10,
-	IO_B11,
+   IO_A0,       //IOA6_B 
+	IO_A1,       //IOA6_A 
+	IO_A2,       //IOA5_B 
+	IO_A3,       //IOA5_A 
+	IO_A4,       //IOA4_B 
+	IO_A5,       //IOA4_A 
+	IO_A6,       //IOA3_B 
+	IO_A7,       //IOA3_A 
+	IO_A8,       //IOA12_A
+	IO_A9,       //IOA12_B
+	IO_A10,      //IOA11_B
+	IO_A11,      //IOA11_A
+	IO_A12,      //IOA10_B
+	IO_A13,      //IOA10_A
+	IO_A14,      //IOA9_A 
+	IO_A15,      //IOA9_B 
+	IO_A16,      //IOA8_A 
+	IO_A17,      //IOA8_B 
+	IO_A18,      //IOA7_A 
+	IO_A19,      //IOA7_B 
+	IO_A20,      //IOA2_A 
+	IO_A21,      //IOA2_B 
+	IO_A22,      //ADC_A_SDO
+	IO_A23,      //ADC_B_SCLK
+	IO_A24,      //ADC_B_SDI
+	IO_A25,      //ADC_B_CSN
+	IO_A_SDA,    //IO_A_SDA
+	IO_A_SCL,    //IO_A_SCL
+	
+   IO_B0,       //IOB6_B 
+	IO_B1,       //IOB6_A 
+	IO_B2,       //IOB5_B 
+	IO_B3,       //IOB5_A 
+	IO_B4,       //IOB4_B 
+	IO_B5,       //IOB4_A 
+	IO_B6,       //IOB3_B 
+	IO_B7,       //IOB3_A 
+	IO_B8,       //IOB12_A
+	IO_B9,       //IOB12_B
+	IO_B10,      //IOB11_B
+	IO_B11,      //IOB11_A
+	IO_B12,      //IOB10_B
+	IO_B13,      //IOB10_A
+	IO_B14,      //IOB9_A 
+	IO_B15,      //IOB9_B 
+	IO_B16,      //IOB8_A 
+	IO_B17,      //IOB8_B 
+	IO_B18,      //IOB7_A 
+	IO_B19,      //IOB7_B 
+	IO_B20,      //IOB2_A 
+	IO_B21,      //IOB2_B 
+	IO_B22,      //ADC_B_SDO
+	IO_B23,      //ADC_B_SCLK
+	IO_B24,      //ADC_B_SDI
+	IO_B25,      //ADC_B_CSN
+	IO_B_SDA,    //IO_B_SDA
+	IO_B_SCL,    //IO_B_SCL
 	//</io_part>
 	ISI_DATA,
 	M1_DATA,
@@ -458,16 +460,17 @@ frontier	b2v_inst(
     .ad7490_1_SCLK           (IO_B23),  //                     .SCLK
     .ad7490_1_CSN            (IO_B25),  //                     .CSN
     .ad7490_1_DIN            (IO_B24),  //                     .DIN
-    .am2301_0_sda            (IO_B2),  //             am2301_0.sda
-    .am2301_0_clk_1us        (),  //                     .clk_1us
+    .am2301_0_sda            (IO_A1),  //             am2301_0.sda
+    .am2301_0_clk_1us        (IO_A0),  //                     .clk_1us
     .am2301_1_sda            (IO_B15),  //             am2301_1.sda
-    .am2301_1_clk_1us        (),   //                     .clk_1us
+    .am2301_1_clk_1us        (IO_B14),   //                     .clk_1us
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
 	.m1_CLK(M1_CLK),
    .m1_RSTN(M1_RSTN),   
 	);
+
 	
 assign	ISI_HSYNC = SYNTHESIZED_WIRE_8[0] ? SYNTHESIZED_WIRE_0 : 1'bz;
 assign	ISI_VSYNC = SYNTHESIZED_WIRE_8[0] ? SYNTHESIZED_WIRE_2 : 1'bz;

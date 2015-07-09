@@ -621,7 +621,13 @@ set_global_assignment -name SOURCE_FILE grid.v
 set_global_assignment -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1405085428" -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1387371009" -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name SIGNALTAP_FILE grid.stp
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1420907013" -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_NAME altera_merlin_router -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_NAME altera_merlin_demultiplexer -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON -qip frontier/synthesis/frontier.qip
 set_global_assignment -name SOPCINFO_FILE frontier/synthesis/../../frontier.sopcinfo -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name MISC_FILE frontier/synthesis/../../frontier.cmp -qip frontier/synthesis/frontier.qip -library frontier
@@ -656,7 +662,7 @@ set_global_assignment -name IP_TOOL_ENV qsys -entity altera_reset_controller -qi
 set_global_assignment -name IP_TOOL_NAME qsys -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1sp1 -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1420907013" -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1436190125" -entity frontier -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_NAME altera_merlin_router -entity frontier_addr_router -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_addr_router -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_addr_router -qip frontier/synthesis/frontier.qip -library frontier
@@ -669,12 +675,15 @@ set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_cmd_xbar_demux -qi
 set_global_assignment -name IP_TOOL_NAME altera_merlin_demultiplexer -entity frontier_cmd_xbar_demux_001 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_cmd_xbar_demux_001 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_cmd_xbar_demux_001 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_NAME altera_merlin_multiplexer -entity frontier_cmd_xbar_mux_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_cmd_xbar_mux_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_cmd_xbar_mux_019 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_NAME altera_merlin_router -entity frontier_id_router -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_id_router -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_id_router -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_NAME altera_merlin_router -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_id_router_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_NAME altera_merlin_router -entity frontier_id_router_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_id_router_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_id_router_019 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_NAME altera_irq_mapper -entity frontier_irq_mapper -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_irq_mapper -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_irq_mapper -qip frontier/synthesis/frontier.qip -library frontier
@@ -684,9 +693,9 @@ set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_irq_mapper_001 -qi
 set_global_assignment -name IP_TOOL_NAME altera_merlin_demultiplexer -entity frontier_rsp_xbar_demux -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_demux -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_demux -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_NAME altera_merlin_demultiplexer -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
-set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_demux_015 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_NAME altera_merlin_demultiplexer -entity frontier_rsp_xbar_demux_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_demux_019 -qip frontier/synthesis/frontier.qip -library frontier
+set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_demux_019 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_NAME altera_merlin_multiplexer -entity frontier_rsp_xbar_mux -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_mux -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_mux -qip frontier/synthesis/frontier.qip -library frontier
@@ -694,3 +703,4 @@ set_global_assignment -name IP_TOOL_NAME altera_merlin_multiplexer -entity front
 set_global_assignment -name IP_TOOL_VERSION 12.1 -entity frontier_rsp_xbar_mux_001 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name IP_TOOL_ENV qsys -entity frontier_rsp_xbar_mux_001 -qip frontier/synthesis/frontier.qip -library frontier
 set_global_assignment -name QIP_FILE frontier/synthesis/frontier.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
