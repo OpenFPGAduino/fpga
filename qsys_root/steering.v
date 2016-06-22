@@ -54,9 +54,11 @@ module steering_driver(
 	always @ (posedge csi_PWMCLK_clk or posedge rsi_PWMRST_reset)
 	begin
 	counter = counter + 1;
-	if(counter ==32'd5000) // 50MHz begin
-	counter = 0;
-	counter1= counter1 + 1; end
+	if(counter ==32'd5000) // 50MHz 
+	begin
+		counter = 0;
+		counter1= counter1 + 1; 
+	end
 	if(counter1 == 8'd1)
 	PWM_out <= 1;
 	else if(counter1 == angle) PWM_out <= 0;
