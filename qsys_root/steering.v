@@ -14,12 +14,12 @@ module steering_driver(
       input					csi_PWMCLK_clk,     //200Mhz
 
 //brush_moter_interface		
-		output streeing,	
-		);PWM_frequent
+		output streeing	
+		);
 //Qsys controller		
 	reg forward_back;
    reg on_off;
-	reg [31:0] PWM_width;
+	reg [31:0] angle;
 	reg [31:0] read_data;
 	assign	avs_ctrl_readdata = read_data;
 	always@(posedge csi_MCLK_clk or posedge rsi_MRST_reset)
@@ -31,10 +31,10 @@ module steering_driver(
 		begin
 			case(avs_ctrl_address)
 				1: begin
-					if(avs_ctrl_byteenable[3]) PWM_width[31:24] <= avs_ctrl_writedata[31:24];
-					if(avs_ctrl_byteenable[2]) PWM_width[23:16] <= avs_ctrl_writedata[23:16];
-					if(avs_ctrl_byteenable[1]) PWM_width[15:8] <= avs_ctrl_writedata[15:8];
-					if(avs_ctrl_byteenable[0]) PWM_width[7:0] <= avs_ctrl_writedata[7:0];
+					if(avs_ctrl_byteenable[3]) angle[31:24] <= avs_ctrl_writedata[31:24];
+					if(avs_ctrl_byteenable[2]) angle[23:16] <= avs_ctrl_writedata[23:16];
+					if(avs_ctrl_byteenable[1]) angle[15:8] <= avs_ctrl_writedata[15:8];
+					if(avs_ctrl_byteenable[0]) angle[7:0] <= avs_ctrl_writedata[7:0];
 				end
 				default:;
 			endcase
@@ -42,24 +42,25 @@ module steering_driver(
 		else begin
 			case(avs_ctrl_address)
 				0: read_data <= 32'hEA680003;
-				1: read_data <= PWM_width;
+				1: read_data <= angle;
 				default: read_data <= 32'b0;
 			endcase
 		end
 	end
-//PWM controller		
-	reg [31:0] PWM;
+//steering controller		
 	reg PWM_out;
+	reg[32:0] counter;
+	reg[32:0] counter1;
 	always @ (posedge csi_PWMCLK_clk or posedge rsi_PWMRST_reset)
 	begin
-		if(rsi_PWMRST_reset)
-			PWM <= 32'b0;
-		else
-		begin
-			PWM <= PWM + 32'b1;      // 2ms pluse width
-			PWM_out <=(PWM > PWM_width) ? 1'b0:1'b1;   
-		end
-	end
+	counter = counter + 1;
+	if(counter ==32'd5000) // 50MHz begin
+	counter = 0;
+	counter1= counter1 + 1; end
+	if(counter1 == 8'd1)
+	PWM_out <= 1;
+	else if(counter1 == angle) PWM_out <= 0;
+	else if (counter1 == 16'd200) counter1=0; end  //2ms
    assign streeing = PWM_out;
 
 endmodule
