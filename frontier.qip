@@ -2,7 +2,7 @@ set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_NAME 
 set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_VERSION "12.1sp1"
 set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_ENV "qsys"
 set_global_assignment -library "frontier" -name SOPCINFO_FILE [file join $::quartus(qip_path) "frontier.sopcinfo"]
-set_instance_assignment -entity "frontier" -library "frontier" -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1436191894"
+set_instance_assignment -entity "frontier" -library "frontier" -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1462168921"
 set_global_assignment -library "frontier" -name MISC_FILE [file join $::quartus(qip_path) "frontier.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "frontier" -name MISC_FILE [file join $::quartus(qip_path) "frontier.qsys"]
