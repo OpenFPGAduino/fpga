@@ -438,6 +438,19 @@
          type = "String";
       }
    }
+   element steering_driver_0.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "587202560";
+         type = "String";
+      }
+   }
    element position_encoder_1.ctrl
    {
       datum _lockedAddress
@@ -488,6 +501,14 @@
       {
          value = "268435720";
          type = "long";
+      }
+   }
+   element steering_driver_1.ctrl
+   {
+      datum baseAddress
+      {
+         value = "603979776";
+         type = "String";
       }
    }
    element brush_motor_driver_0.ctrl
@@ -679,7 +700,7 @@
    {
       datum _sortIndex
       {
-         value = "36";
+         value = "38";
          type = "int";
       }
    }
@@ -761,7 +782,7 @@
    {
       datum _sortIndex
       {
-         value = "40";
+         value = "42";
          type = "int";
       }
    }
@@ -769,7 +790,7 @@
    {
       datum _sortIndex
       {
-         value = "39";
+         value = "41";
          type = "int";
       }
    }
@@ -777,7 +798,7 @@
    {
       datum _sortIndex
       {
-         value = "38";
+         value = "40";
          type = "int";
       }
    }
@@ -785,7 +806,7 @@
    {
       datum _sortIndex
       {
-         value = "37";
+         value = "39";
          type = "int";
       }
    }
@@ -832,7 +853,15 @@
    {
       datum _sortIndex
       {
-         value = "41";
+         value = "35";
+         type = "int";
+      }
+   }
+   element steering_driver_1
+   {
+      datum _sortIndex
+      {
+         value = "36";
          type = "int";
       }
    }
@@ -880,7 +909,7 @@
    {
       datum _sortIndex
       {
-         value = "35";
+         value = "37";
          type = "int";
       }
    }
@@ -1884,6 +1913,14 @@
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="66666666" />
  </module>
+ <module
+   kind="steering_driver"
+   version="1.0"
+   enabled="1"
+   name="steering_driver_1">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="66666666" />
+ </module>
  <connection
    kind="reset"
    version="12.1"
@@ -2766,4 +2803,40 @@
    version="12.1"
    start="HPS_tabby.H1CLK"
    end="steering_driver_0.pwmclk" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="steering_driver_1.mrst" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="steering_driver_1.pwmrst" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="steering_driver_1.mclk" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H1CLK"
+   end="steering_driver_1.pwmclk" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="steering_driver_0.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x23000000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="steering_driver_1.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x24000000" />
+ </connection>
 </system>
