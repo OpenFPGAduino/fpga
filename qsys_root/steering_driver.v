@@ -19,7 +19,7 @@ module steering_driver(
 //Qsys controller		
 	reg forward_back;
    reg on_off;
-	reg [31:0] angle;
+	reg [9:0] angle;
 	reg [31:0] read_data;
 	assign	avs_ctrl_readdata = read_data;
 	always@(posedge csi_MCLK_clk or posedge rsi_MRST_reset)
@@ -31,9 +31,7 @@ module steering_driver(
 		begin
 			case(avs_ctrl_address)
 				1: begin
-					if(avs_ctrl_byteenable[3]) angle[31:24] <= avs_ctrl_writedata[31:24];
-					if(avs_ctrl_byteenable[2]) angle[23:16] <= avs_ctrl_writedata[23:16];
-					if(avs_ctrl_byteenable[1]) angle[15:8] <= avs_ctrl_writedata[15:8];
+					if(avs_ctrl_byteenable[1]) angle[9:8] <= avs_ctrl_writedata[9:8];
 					if(avs_ctrl_byteenable[0]) angle[7:0] <= avs_ctrl_writedata[7:0];
 				end
 				default:;
@@ -49,20 +47,29 @@ module steering_driver(
 	end
 //steering controller		
 	reg PWM_out;
-	reg[32:0] counter;
-	reg[32:0] counter1;
+	reg[31:0] counter;
 	always @ (posedge csi_PWMCLK_clk or posedge rsi_PWMRST_reset)
 	begin
-	counter = counter + 1;
-	if(counter ==32'd5000) // 50MHz 
-	begin
-		counter = 0;
-		counter1= counter1 + 1; 
+		if (rsi_PWMRST_reset) 
+			counter <= 32'b0;
+		else 	
+			counter <= counter + 2048 * 639; // 500 * 0xffffffff / 200000000;
 	end
-	if(counter1 == 8'd1)
-	PWM_out <= 1;
-	else if(counter1 == angle) PWM_out <= 0;
-	else if (counter1 == 16'd200) counter1=0; end  //2ms
+	reg [10:0] PWM; // 2048 
+	always @(posedge counter[31] or posedge rsi_PWMRST_reset)
+	begin
+		if (rsi_PWMRST_reset) 
+			PWM <= 32'b0;
+		else 	
+			PWM <= PWM + 1;
+	end
+	always @(PWM)
+	begin
+		if(PWM < angle)
+			PWM_out<= 1;
+		else
+			PWM_out<= 0;
+	end
    assign streeing = PWM_out;
 
 endmodule
