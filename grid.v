@@ -464,6 +464,8 @@ frontier	b2v_inst(
     .am2301_0_clk_1us        (IO_A0),  //                     .clk_1us
     .am2301_1_sda            (IO_A3),  //             am2301_1.sda
     .am2301_1_clk_1us        (IO_A2),   //                     .clk_1us
+	 .steering_driver_0_export (A5),      //    steering_driver_0.export
+    .steering_driver_1_export (A7),      //    steering_driver_1.export
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
