@@ -2,7 +2,7 @@ set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_NAME 
 set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_VERSION "12.1sp1"
 set_global_assignment -entity "frontier" -library "frontier" -name IP_TOOL_ENV "qsys"
 set_global_assignment -library "frontier" -name SOPCINFO_FILE [file join $::quartus(qip_path) "frontier.sopcinfo"]
-set_instance_assignment -entity "frontier" -library "frontier" -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1462168921"
+set_instance_assignment -entity "frontier" -library "frontier" -name SLD_INFO "QSYS_NAME frontier HAS_SOPCINFO 1 GENERATION_ID 1469331316"
 set_global_assignment -library "frontier" -name MISC_FILE [file join $::quartus(qip_path) "frontier.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "frontier" -name MISC_FILE [file join $::quartus(qip_path) "frontier.qsys"]
@@ -36,6 +36,7 @@ set_global_assignment -library "frontier" -name SYSTEMVERILOG_FILE [file join $:
 set_global_assignment -library "frontier" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "frontier" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "frontier" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "frontier" -name VERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/steering_driver.v"]
 set_global_assignment -library "frontier" -name VERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/AM2301.v"]
 set_global_assignment -library "frontier" -name VERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/grid_AD7490.v"]
 set_global_assignment -library "frontier" -name VERILOG_FILE [file join $::quartus(qip_path) "frontier/synthesis/submodules/arm9_soft.v"]
