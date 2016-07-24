@@ -53,13 +53,13 @@ module steering_driver(
 		if (rsi_PWMRST_reset) 
 			counter <= 32'b0;
 		else 	
-			counter <= counter + 2048 * 639; // 500 * 0xffffffff / 200000000;
+			counter <= counter + 32'd2048 * 32'd1073; // 50(Hz) * 0xffffffff / 200000000;
 	end
 	reg [10:0] PWM; // 2048 
 	always @(posedge counter[31] or posedge rsi_PWMRST_reset)
 	begin
 		if (rsi_PWMRST_reset) 
-			PWM <= 32'b0;
+			PWM <= 11'b0;
 		else 	
 			PWM <= PWM + 1;
 	end
