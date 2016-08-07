@@ -479,7 +479,7 @@ frontier	b2v_inst(
     .steering_driver_12_export (),  //   steering_driver_12.export
     .steering_driver_13_export (),  //   steering_driver_13.export
     .steering_driver_14_export (),  //   steering_driver_14.export
-    .steering_driver_15_export ()   //   steering_driver_15.export
+    .steering_driver_15_export (),  //   steering_driver_15.export
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
