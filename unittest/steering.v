@@ -370,7 +370,7 @@ frontier	b2v_inst(
     .slot_a_P6               (),               //                     .P6
     .slot_a_P7               (),               //                     .P7
     .slot_a_P8               (IO_A8),               //                     .P8
-    .slot_a_P9               (IO_A9),               //                     .P9
+    .slot_a_P9               (),               //                     .P9
     .slot_a_P10              (),              //                     .P10
     .slot_a_P11              (),              //                     .P11
     .slot_a_P12              (),              //                     .P12
@@ -464,8 +464,22 @@ frontier	b2v_inst(
     .am2301_0_clk_1us        (IO_A0),  //                     .clk_1us
     .am2301_1_sda            (IO_A3),  //             am2301_1.sda
     .am2301_1_clk_1us        (IO_A2),   //                     .clk_1us
-	 .steering_driver_0_export (IO_A5),      //    steering_driver_0.export
+    .steering_driver_0_export (IO_A5),      //    steering_driver_0.export
     .steering_driver_1_export (IO_A7),      //    steering_driver_1.export
+    .steering_driver_2_export  (IO_A9),  //    steering_driver_2.export
+    .steering_driver_3_export  (IO_A11),  //    steering_driver_3.export
+    .steering_driver_4_export  (IO_A13),  //    steering_driver_4.export
+    .steering_driver_5_export  (IO_A14),  //    steering_driver_5.export
+    .steering_driver_6_export  (IO_A16),  //    steering_driver_6.export
+    .steering_driver_7_export  (IO_A18),  //    steering_driver_7.export
+    .steering_driver_8_export  (IO_A20),  //    steering_driver_8.export
+    .steering_driver_9_export  (),  //    steering_driver_9.export
+    .steering_driver_10_export (),  //   steering_driver_10.export
+    .steering_driver_11_export (),  //   steering_driver_11.export
+    .steering_driver_12_export (),  //   steering_driver_12.export
+    .steering_driver_13_export (),  //   steering_driver_13.export
+    .steering_driver_14_export (),  //   steering_driver_14.export
+    .steering_driver_15_export (),  //   steering_driver_15.export
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
