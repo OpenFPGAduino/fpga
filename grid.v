@@ -370,7 +370,7 @@ frontier	b2v_inst(
     .slot_a_P6               (),               //                     .P6
     .slot_a_P7               (),               //                     .P7
     .slot_a_P8               (IO_A8),               //                     .P8
-    .slot_a_P9               (IO_A9),               //                     .P9
+    .slot_a_P9               (),               //                     .P9
     .slot_a_P10              (),              //                     .P10
     .slot_a_P11              (),              //                     .P11
     .slot_a_P12              (),              //                     .P12
