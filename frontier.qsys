@@ -290,6 +290,19 @@
          type = "int";
       }
    }
+   element fan_motor_driver_6.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "2240";
+         type = "String";
+      }
+   }
    element steering_driver_11.ctrl
    {
       datum _lockedAddress
@@ -386,6 +399,19 @@
          type = "String";
       }
    }
+   element fan_motor_driver_4.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268437632";
+         type = "String";
+      }
+   }
    element basic_FuncLED_2.ctrl
    {
       datum _lockedAddress
@@ -423,6 +449,19 @@
       {
          value = "268436448";
          type = "long";
+      }
+   }
+   element fan_motor_driver_2.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268437568";
+         type = "String";
       }
    }
    element brush_motor_driver_2.ctrl
@@ -477,6 +516,19 @@
          type = "String";
       }
    }
+   element fan_motor_driver_5.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268437664";
+         type = "String";
+      }
+   }
    element steering_driver_6.ctrl
    {
       datum _lockedAddress
@@ -501,6 +553,19 @@
       {
          value = "268436128";
          type = "long";
+      }
+   }
+   element fan_motor_driver_3.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268437600";
+         type = "String";
       }
    }
    element brush_motor_driver_5.ctrl
@@ -820,6 +885,14 @@
          type = "String";
       }
    }
+   element fan_motor_driver_7.ctrl
+   {
+      datum baseAddress
+      {
+         value = "268437824";
+         type = "String";
+      }
+   }
    element AM2301_1.ctrl
    {
       datum _lockedAddress
@@ -970,7 +1043,7 @@
    {
       datum _sortIndex
       {
-         value = "63";
+         value = "54";
          type = "int";
       }
    }
@@ -978,7 +1051,7 @@
    {
       datum _sortIndex
       {
-         value = "64";
+         value = "55";
          type = "int";
       }
    }
@@ -986,7 +1059,7 @@
    {
       datum _sortIndex
       {
-         value = "65";
+         value = "56";
          type = "int";
       }
    }
@@ -994,7 +1067,7 @@
    {
       datum _sortIndex
       {
-         value = "66";
+         value = "57";
          type = "int";
       }
    }
@@ -1002,7 +1075,7 @@
    {
       datum _sortIndex
       {
-         value = "67";
+         value = "58";
          type = "int";
       }
    }
@@ -1010,7 +1083,7 @@
    {
       datum _sortIndex
       {
-         value = "68";
+         value = "59";
          type = "int";
       }
    }
@@ -1092,7 +1165,7 @@
    {
       datum _sortIndex
       {
-         value = "58";
+         value = "64";
          type = "int";
       }
    }
@@ -1100,7 +1173,7 @@
    {
       datum _sortIndex
       {
-         value = "57";
+         value = "63";
          type = "int";
       }
    }
@@ -1108,7 +1181,7 @@
    {
       datum _sortIndex
       {
-         value = "56";
+         value = "62";
          type = "int";
       }
    }
@@ -1116,7 +1189,7 @@
    {
       datum _sortIndex
       {
-         value = "55";
+         value = "61";
          type = "int";
       }
    }
@@ -1331,7 +1404,7 @@
    {
       datum _sortIndex
       {
-         value = "59";
+         value = "65";
          type = "int";
       }
    }
@@ -1339,7 +1412,7 @@
    {
       datum _sortIndex
       {
-         value = "60";
+         value = "66";
          type = "int";
       }
    }
@@ -1347,7 +1420,7 @@
    {
       datum _sortIndex
       {
-         value = "61";
+         value = "67";
          type = "int";
       }
    }
@@ -1355,7 +1428,7 @@
    {
       datum _sortIndex
       {
-         value = "62";
+         value = "68";
          type = "int";
       }
    }
@@ -1363,7 +1436,7 @@
    {
       datum _sortIndex
       {
-         value = "54";
+         value = "60";
          type = "int";
       }
    }
@@ -1582,6 +1655,21 @@
    internal="steering_driver_15.steering"
    type="conduit"
    dir="end" />
+ <interface
+   name="fan_motor_driver_2"
+   internal="fan_motor_driver_2.fan_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fan_motor_driver_3"
+   internal="fan_motor_driver_3.fan_motor"
+   type="conduit"
+   dir="end" />
+ <interface name="am2301_2" internal="AM2301_2.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_3" internal="AM2301_3.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_4" internal="AM2301_4.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_5" internal="AM2301_5.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_6" internal="AM2301_6.AM2301" type="conduit" dir="end" />
  <module kind="hps_tabby" version="1.1" enabled="1" name="HPS_tabby" />
  <module kind="basic_SysID" version="1.0" enabled="1" name="basic_SysID">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
@@ -2626,50 +2714,50 @@
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_2">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_3">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_4">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_5">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_6">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <module
    kind="fan_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="fan_motor_driver_7">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
+  <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
  <connection
    kind="reset"
@@ -4037,4 +4125,172 @@
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x10000340" />
  </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_2.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_2.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_2.PWMRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_2.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000840" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_2.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_3.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_3.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_3.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_3.PWMCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_3.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000860" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_4.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_4.MCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_4.PWMCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_4.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000880" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_4.PWMRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_5.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_5.MCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_5.PWMRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_5.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x100008a0" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_5.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_6.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_6.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_6.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x08c0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_6.PWMRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_6.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_7.MRST" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="fan_motor_driver_7.PWMRST" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="fan_motor_driver_7.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000940" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.H2CLK"
+   end="fan_motor_driver_7.PWMCLK" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="fan_motor_driver_7.MCLK" />
 </system>
