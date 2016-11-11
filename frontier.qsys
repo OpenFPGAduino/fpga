@@ -1670,6 +1670,38 @@
  <interface name="am2301_4" internal="AM2301_4.AM2301" type="conduit" dir="end" />
  <interface name="am2301_5" internal="AM2301_5.AM2301" type="conduit" dir="end" />
  <interface name="am2301_6" internal="AM2301_6.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_7" internal="AM2301_7.AM2301" type="conduit" dir="end" />
+ <interface name="am2301_8" internal="AM2301_8.AM2301" type="conduit" dir="end" />
+ <interface
+   name="grid_pwm_2"
+   internal="grid_PWM_2.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="grid_pwm_1"
+   internal="grid_PWM_1.EXPORT"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fan_motor_driver_4"
+   internal="fan_motor_driver_4.fan_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fan_motor_driver_5"
+   internal="fan_motor_driver_5.fan_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fan_motor_driver_6"
+   internal="fan_motor_driver_6.fan_motor"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="fan_motor_driver_7"
+   internal="fan_motor_driver_7.fan_motor"
+   type="conduit"
+   dir="end" />
  <module kind="hps_tabby" version="1.1" enabled="1" name="HPS_tabby" />
  <module kind="basic_SysID" version="1.0" enabled="1" name="basic_SysID">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
