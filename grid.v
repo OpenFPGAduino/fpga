@@ -480,6 +480,30 @@ frontier	b2v_inst(
     .steering_driver_13_export (),  //   steering_driver_13.export
     .steering_driver_14_export (),  //   steering_driver_14.export
     .steering_driver_15_export (),  //   steering_driver_15.export
+	 .fan_motor_driver_2_export (), //   fan_motor_driver_2.export
+	 .fan_motor_driver_4_export (), //   fan_motor_driver_4.export
+    .fan_motor_driver_5_export (), //   fan_motor_driver_5.export
+    .fan_motor_driver_6_export (), //   fan_motor_driver_6.export
+    .fan_motor_driver_7_export ()  //   fan_motor_driver_7.export
+    .fan_motor_driver_3_export (), //   fan_motor_driver_3.export
+    .am2301_2_sda              (),              //             am2301_2.sda
+    .am2301_2_clk_1us          (),          //                     .clk_1us
+    .am2301_3_sda              (),              //             am2301_3.sda
+    .am2301_3_clk_1us          (),          //                     .clk_1us
+    .am2301_4_sda              (),              //             am2301_4.sda
+    .am2301_4_clk_1us          (),          //                     .clk_1us
+    .am2301_5_sda              (),              //             am2301_5.sda
+    .am2301_5_clk_1us          (),          //                     .clk_1us
+    .am2301_6_sda              (),              //             am2301_6.sda
+    .am2301_6_clk_1us          (),          //                     .clk_1us
+    .am2301_7_sda              (),              //             am2301_7.sda
+    .am2301_7_clk_1us          (),          //                     .clk_1us
+    .am2301_8_sda              (),              //             am2301_8.sda
+    .am2301_8_clk_1us          (),          //                     .clk_1us
+    .grid_pwm_2_export         (),         //           grid_pwm_2.export
+    .grid_pwm_1_export         (),         //           grid_pwm_1.export
+
+ 
 	//</module_part>
 	
 	.m0_EINT(M1_EINT),
