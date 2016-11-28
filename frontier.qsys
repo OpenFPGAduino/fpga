@@ -442,8 +442,8 @@
       }
       datum baseAddress
       {
-         value = "268436320";
-         type = "long";
+         value = "268437984";
+         type = "String";
       }
    }
    element fan_motor_driver_1.ctrl
@@ -572,8 +572,8 @@
       }
       datum baseAddress
       {
-         value = "268436288";
-         type = "long";
+         value = "268437952";
+         type = "String";
       }
    }
    element position_encoder_1.ctrl
@@ -585,8 +585,8 @@
       }
       datum baseAddress
       {
-         value = "268436256";
-         type = "long";
+         value = "16779680";
+         type = "String";
       }
    }
    element steering_driver_8.ctrl
@@ -746,7 +746,7 @@
    {
       datum _lockedAddress
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
       datum baseAddress
@@ -972,8 +972,8 @@
       }
       datum baseAddress
       {
-         value = "268436224";
-         type = "long";
+         value = "268437888";
+         type = "String";
       }
    }
    element AM2301_2.ctrl
@@ -1230,7 +1230,7 @@
    {
       datum _sortIndex
       {
-         value = "63";
+         value = "65";
          type = "int";
       }
    }
@@ -1238,7 +1238,7 @@
    {
       datum _sortIndex
       {
-         value = "62";
+         value = "66";
          type = "int";
       }
    }
@@ -1246,7 +1246,47 @@
    {
       datum _sortIndex
       {
-         value = "61";
+         value = "67";
+         type = "int";
+      }
+   }
+   element position_encoder_4
+   {
+      datum _sortIndex
+      {
+         value = "68";
+         type = "int";
+      }
+   }
+   element position_encoder_5
+   {
+      datum _sortIndex
+      {
+         value = "69";
+         type = "int";
+      }
+   }
+   element position_encoder_6
+   {
+      datum _sortIndex
+      {
+         value = "70";
+         type = "int";
+      }
+   }
+   element position_encoder_7
+   {
+      datum _sortIndex
+      {
+         value = "71";
+         type = "int";
+      }
+   }
+   element position_encoder_8
+   {
+      datum _sortIndex
+      {
+         value = "72";
          type = "int";
       }
    }
@@ -1461,7 +1501,7 @@
    {
       datum _sortIndex
       {
-         value = "65";
+         value = "60";
          type = "int";
       }
    }
@@ -1469,7 +1509,7 @@
    {
       datum _sortIndex
       {
-         value = "66";
+         value = "61";
          type = "int";
       }
    }
@@ -1477,7 +1517,7 @@
    {
       datum _sortIndex
       {
-         value = "67";
+         value = "62";
          type = "int";
       }
    }
@@ -1485,7 +1525,7 @@
    {
       datum _sortIndex
       {
-         value = "68";
+         value = "63";
          type = "int";
       }
    }
@@ -1493,7 +1533,7 @@
    {
       datum _sortIndex
       {
-         value = "60";
+         value = "73";
          type = "int";
       }
    }
@@ -1564,7 +1604,9 @@
    dir="end" />
  <interface
    name="position_encoder_0"
-   internal="position_encoder_0.position_encoder" />
+   internal="position_encoder_0.position_encoder"
+   type="conduit"
+   dir="end" />
  <interface
    name="step_motor_driver_1"
    internal="step_motor_driver_1.step_motor"
@@ -1602,13 +1644,19 @@
    dir="end" />
  <interface
    name="position_encoder_1"
-   internal="position_encoder_1.position_encoder" />
+   internal="position_encoder_1.position_encoder"
+   type="conduit"
+   dir="end" />
  <interface
    name="position_encoder_2"
-   internal="position_encoder_2.position_encoder" />
+   internal="position_encoder_2.position_encoder"
+   type="conduit"
+   dir="end" />
  <interface
    name="position_encoder_3"
-   internal="position_encoder_3.position_encoder" />
+   internal="position_encoder_3.position_encoder"
+   type="conduit"
+   dir="end" />
  <interface
    name="brush_motor_driver_0"
    internal="brush_motor_driver_0.brush_motor"
@@ -1814,7 +1862,7 @@
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_0">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
@@ -1885,21 +1933,21 @@
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_1">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_2">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_3">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
@@ -2848,6 +2896,41 @@
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="200000000" />
  </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_4">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_5">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_6">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_7">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+ </module>
+ <module
+   kind="position_encoder"
+   version="1.0"
+   enabled="0"
+   name="position_encoder_8">
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+ </module>
  <connection
    kind="reset"
    version="12.1"
@@ -3110,7 +3193,7 @@
    start="HPS_tabby.M1"
    end="position_encoder_0.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000300" />
+  <parameter name="baseAddress" value="0x10000980" />
  </connection>
  <connection
    kind="avalon"
@@ -3375,7 +3458,7 @@
    start="HPS_tabby.M1"
    end="position_encoder_1.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000320" />
+  <parameter name="baseAddress" value="0x010009a0" />
  </connection>
  <connection
    kind="reset"
@@ -3393,7 +3476,7 @@
    start="HPS_tabby.M1"
    end="position_encoder_2.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000340" />
+  <parameter name="baseAddress" value="0x100009c0" />
  </connection>
  <connection
    kind="reset"
@@ -3411,7 +3494,7 @@
    start="HPS_tabby.M1"
    end="position_encoder_3.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000360" />
+  <parameter name="baseAddress" value="0x100009e0" />
  </connection>
  <connection
    kind="clock"
