@@ -429,7 +429,7 @@
       }
       datum baseAddress
       {
-         value = "268436544";
+         value = "268438176";
          type = "String";
       }
    }
@@ -560,6 +560,19 @@
       datum baseAddress
       {
          value = "268437088";
+         type = "String";
+      }
+   }
+   element position_encoder_8.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268438144";
          type = "String";
       }
    }
@@ -766,6 +779,45 @@
       {
          value = "268436384";
          type = "long";
+      }
+   }
+   element position_encoder_6.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268438080";
+         type = "String";
+      }
+   }
+   element position_encoder_5.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268438048";
+         type = "String";
+      }
+   }
+   element position_encoder_4.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268438016";
+         type = "String";
       }
    }
    element AD7490_0.ctrl
@@ -1077,6 +1129,19 @@
       datum baseAddress
       {
          value = "268437760";
+         type = "String";
+      }
+   }
+   element position_encoder_7.ctrl
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "268438112";
          type = "String";
       }
    }
@@ -1674,7 +1739,9 @@
    dir="end" />
  <interface
    name="subdivision_step_motor_driver_0"
-   internal="subdivision_step_motor_driver_0.step_motor" />
+   internal="subdivision_step_motor_driver_0.step_motor"
+   type="conduit"
+   dir="end" />
  <interface name="m1" internal="ARM9_soft_core_0.ctrl" type="conduit" dir="end" />
  <interface name="ad7490_0" internal="AD7490_0.ADC" type="conduit" dir="end" />
  <interface name="ad7490_1" internal="AD7490_1.ADC" type="conduit" dir="end" />
@@ -1962,7 +2029,7 @@
  <module
    kind="subdivision_step_motor_driver"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="subdivision_step_motor_driver_0">
   <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
   <parameter name="AUTO_PWMCLK_CLOCK_RATE" value="133333333" />
@@ -2899,37 +2966,37 @@
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_4">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_5">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_6">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_7">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <module
    kind="position_encoder"
    version="1.0"
-   enabled="0"
+   enabled="1"
    name="position_encoder_8">
-  <parameter name="AUTO_MCLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_MCLK_CLOCK_RATE" value="133333333" />
  </module>
  <connection
    kind="reset"
@@ -3540,7 +3607,7 @@
    start="HPS_tabby.M1"
    end="subdivision_step_motor_driver_0.ctrl">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10000440" />
+  <parameter name="baseAddress" value="0x10000aa0" />
  </connection>
  <connection
    kind="clock"
@@ -4577,4 +4644,94 @@
    version="12.1"
    start="HPS_tabby.H2CLK"
    end="step_motor_driver_8.PWMCLK" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_4.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_4.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_4.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000a00" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_5.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_5.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_5.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000a20" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_6.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_6.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_6.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000a40" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_7.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_7.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_7.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000a60" />
+ </connection>
+ <connection
+   kind="reset"
+   version="12.1"
+   start="HPS_tabby.MRST"
+   end="position_encoder_8.MRST" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="HPS_tabby.MCLK"
+   end="position_encoder_8.MCLK" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="HPS_tabby.M1"
+   end="position_encoder_8.ctrl">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10000a80" />
+ </connection>
 </system>
