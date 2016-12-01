@@ -484,7 +484,7 @@ frontier	b2v_inst(
 	 .fan_motor_driver_4_export (), //   fan_motor_driver_4.export
     .fan_motor_driver_5_export (), //   fan_motor_driver_5.export
     .fan_motor_driver_6_export (), //   fan_motor_driver_6.export
-    .fan_motor_driver_7_export ()  //   fan_motor_driver_7.export
+    .fan_motor_driver_7_export (), //   fan_motor_driver_7.export
     .fan_motor_driver_3_export (), //   fan_motor_driver_3.export
     .am2301_2_sda              (),              //             am2301_2.sda
     .am2301_2_clk_1us          (),          //                     .clk_1us
