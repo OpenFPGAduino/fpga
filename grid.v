@@ -90,7 +90,7 @@ module grid(
 	IO_A_LOE,
 	IO_B_HOE,
 	IO_B_LOE,
-	//<io_part>
+	//<io_part extension board A>
    IO_A0,       //IOA6_B 
 	IO_A1,       //IOA6_A 
 	IO_A2,       //IOA5_B 
@@ -119,7 +119,7 @@ module grid(
 	IO_A25,      //ADC_B_CSN
 	IO_A_SDA,    //IO_A_SDA
 	IO_A_SCL,    //IO_A_SCL
-	
+	//<io_part extension board B>
    IO_B0,       //IOB6_B 
 	IO_B1,       //IOB6_A 
 	IO_B2,       //IOB5_B 
@@ -464,10 +464,10 @@ frontier	b2v_inst(
     .am2301_0_clk_1us        (IO_A0),  //                     .clk_1us
     .am2301_1_sda            (IO_A3),  //             am2301_1.sda
     .am2301_1_clk_1us        (IO_A2),   //                     .clk_1us
-    .steering_driver_0_export (IO_A5),      //    steering_driver_0.export
-    .steering_driver_1_export (IO_A7),      //    steering_driver_1.export
-    .steering_driver_2_export  (IO_A9),  //    steering_driver_2.export
-    .steering_driver_3_export  (IO_A11),  //    steering_driver_3.export
+    .steering_driver_0_export (IO_A7),      //    steering_driver_0.export
+    .steering_driver_1_export (IO_A5),      //    steering_driver_1.export
+    .steering_driver_2_export  (IO_B7),  //    steering_driver_2.export
+    .steering_driver_3_export  (IO_B5),  //    steering_driver_3.export
     .steering_driver_4_export  (IO_A13),  //    steering_driver_4.export
     .steering_driver_5_export  (IO_A14),  //    steering_driver_5.export
     .steering_driver_6_export  (IO_A16),  //    steering_driver_6.export
