@@ -143,6 +143,6 @@ module step_motor_driver(
 	assign AX = !(motor_state[3] & PWM_out_A & on_off);
 	assign AY = !(motor_state[2] & PWM_out_A & on_off);
 	assign BX = !(motor_state[1] & PWM_out_A & on_off);
-	assign BY =	!(motor_state[0] & PWM_out_A & on_off);
+	assign BY = !(motor_state[0] & PWM_out_A & on_off);
 	
 endmodule
