@@ -1,16 +1,16 @@
 module AM2301(
 		// Qsys bus interface	
-		input					rsi_MRST_reset,
-		input					csi_MCLK_clk,
-		input		[31:0]	avs_ctrl_writedata,
-		output	[31:0]	avs_ctrl_readdata,
+		input                           rsi_MRST_reset,
+		input                           csi_MCLK_clk,
+		input		[31:0]          avs_ctrl_writedata,
+		output	        [31:0]	        avs_ctrl_readdata,
 		input		[3:0]		avs_ctrl_byteenable,
 		input		[2:0]		avs_ctrl_address,
-		input					avs_ctrl_write,
-		input					avs_ctrl_read,
+		input				avs_ctrl_write,
+		input				avs_ctrl_read,
 		output				avs_ctrl_waitrequest,
 		// AM2301 interface
-	   output clk_1us,
+	        output clk_1us,
 		//input sda_in,
 		inout sda
 );
